@@ -1,0 +1,139 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="landing-home">
+                <img src="assets/images/home.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="landing-home__text">
+                I'am <span style="color: #f68338;">DINESH BABU</span>
+                <p class="line-1 anim-typewriter">I develop web interfaces</p>
+            </div>
+        </div>
+    </div>
+    <section class="about marg-bot">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="about-heading">
+                    ABOUT ME
+                </div>
+                <div class="about-description">
+                    Passionate Front-End Developer with 3+ years’ experience in web development.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="about-pic">
+                    <img src="assets/images/about.jpg" alt="" class="about-img img-fluid">
+                </div>
+            </div>
+            <div class="col-md-7" style="padding: 20px;">
+                <div class="about-pic-text">
+                    Curabitur convallis fringilla diam
+                </div>
+                <div class="about-pic-heading">
+                     Professional Experience
+                    <div>to boost <span style="color: #f68338;">your creative</span> projects</div>
+                </div>
+                <div class="about-pic-description">
+                    Over 3 years of hands-on professional software development experience across   all phases of software system development from requirements gathering, design, coding to testing and deployment
+                </div>
+                <div class="about-pic-list">
+                    <ul class="list-group">
+                        <li class="list-item">
+                           Expertise in Web Development
+                        </li>
+                        <li class="list-item">
+                           Experience in NodeJS to fetch Data from MongoDB .
+                        </li>
+                        <li class="list-item">
+                           Experience in Deployment using Dockers .
+                        </li>
+                        <li class="list-item">
+                           Interested to work in different technologies.
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn portfolio-btn" style="margin-top: 50px;">My Portfolio</button>
+            </div>
+        </div>
+    </section>
+    <section class="skills marg-bot">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="skill">
+                    Skills Section
+                </div>
+                <div class="skill-description">
+                    Always keen on learning new technologies and framework
+                </div>
+                <div class="row skill-learning-container">
+                    <div class="current-learning">
+                        Current Learning
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                          <div class="card h-100">               
+                            <div class="card-body">
+                              <h5 class="card-title">ReactJS</h5>
+                              <p class="card-text">JavaScript Library</p>
+                            </div>             
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">             
+                            <div class="card-body">
+                              <h5 class="card-title">Dockers</h5>
+                              <p class="card-text">Backend Technology</p>
+                            </div>               
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">                
+                            <div class="card-body">
+                              <h5 class="card-title">NodeJS</h5>
+                              <p class="card-text">Backend Technology</p>
+                            </div>            
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ng-container *ngFor="let tech of skills">
+                    <div class="skill-heading">{{tech.skill}}</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" [style.width.%]="tech.percentage" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </ng-container>      
+            </div>
+        </div>
+    </section>
+    <section class="education marg-bot">
+        <div class="button-container d-flex justify-content-center">
+            <button class="btn custom-btn mr-2" routerLink="projects" routerLinkActive="active">Projects</button> 
+            <button class="btn custom-btn mr-2" routerLink="education" routerLinkActive="active">Education</button> 
+        </div>
+        <router-outlet></router-outlet>
+    </section>
+    <section class="appreciation marg-bot">
+        <app-cards></app-cards>
+    </section>
+    <footer>
+       <div class="contact-container">
+           <div class="linkdin">
+             <a href="https://www.linkedin.com/in/dinesh-babu-2604551b1"><i class="fa fa-linkedin"></i>
+            </a>
+           </div>
+           <div class="github">
+            <a><i class="fa fa-github-square"></i></a>
+           </div>
+           <div class="mail">
+            <a ><i class="fa fa-envelope"></i></a>
+           </div>
+           <div class="phone">
+            <i class="fa fa-phone"></i><span>+91-8123676619</span>
+           </div>
+       </div>
+    </footer>
+</div>

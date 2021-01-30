@@ -1,0 +1,228 @@
+.landing-home {
+    height: 600px;
+    overflow: hidden;
+}
+
+.landing-home::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 97.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.landing-home__text{
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ccc;
+    animation:  animateText 2s ease-in;
+}
+
+.about-heading, .skill {
+    margin: 30px 10px 15px 0;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.about-description, .skill-description  {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.about-pic {
+    height: 500px;
+    overflow: hidden;
+}
+
+.about-pic-text {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-pic-heading{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.about-pic-description{
+    margin: 30px 0;
+    font-size: 12px;
+    color: #5e646a;
+}
+
+ul {
+    list-style: none;
+}
+
+ ul li::before {
+    content: "\2192";
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 0.3rem;
+    color: #f68338;
+}
+ li {
+    font-size: 12px;
+    color: #5e646a;
+    margin: 5px 0;
+ }
+
+ .portfolio-btn {
+     border-radius: 0px;
+     background-color: #f68338;
+     color: #fff;
+     padding: 10px 25px;
+     font-size: 12px;
+     font-weight: 400;
+     text-transform: uppercase;
+     border-left: 2px solid black;
+ }
+
+ .about-pic-heading:after {
+    content: "";
+    border-bottom: 2px solid  #f68338;
+    margin-top: 15px;
+    width: 65px;
+    position: absolute;
+ }
+
+ @keyframes animateText{
+     0%{
+        left: 0%;
+        opacity: 0;
+     }
+     100% {
+         left: 10%;
+     }
+ }
+
+ .line-1{
+    position: relative;
+    top: 50%;  
+    width: 16px;
+    margin: 15px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 50%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to {width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.progress{
+    margin: 15px auto;
+    height: 0.75rem;
+    border-radius: 0.5rem;
+}
+.skill-heading{
+    font-size: 14px;
+    font-weight: 300;
+}
+.progress-bar {
+    background: -webkit-linear-gradient(left, #f47729 1%,#f4a370 50%,#f4bc9a 100%); /* Chrome10-25,Safari5.1-6 */;
+    transition: width 2.5s ease;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-text{
+    font-size: 12px;
+}
+
+.current-learning{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.current-learning:after {
+    content: "";
+    border-bottom: 2px solid  #f68338;
+    width: 55px;
+    left:15px;
+    margin-top: 30px;
+    position: absolute;
+ }
+
+ .marg-bot {
+     margin-bottom: 3rem;
+ }
+
+ .custom-btn{
+    border-radius: 0px;
+    background-color: #f68338;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+ }
+ .active{
+    border-left: 5px solid black;
+ }
+
+ .card {
+     box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.75);
+ }
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+  display: flex;
+  font-size: 24px;
+  color: #f68338;
+  div{
+      margin: 10px;
+  }
+  .phone {
+      span {
+          opacity: 0;
+      }
+      &:hover span{ 
+        transition: .5s ease-out; 
+         opacity: 1;
+      }
+  }
+  
+}
+
+.fa {
+    color: #f68338;
+}
