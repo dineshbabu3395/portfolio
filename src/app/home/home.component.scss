@@ -1,19 +1,4 @@
-.landing-home {
-    overflow: hidden;
-}
-img{
-    height: 100vh;
-    width: 100vw;
-}
-.landing-home::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+
 .landing-home__text{
     position: absolute;
     left: 10%;
@@ -23,7 +8,24 @@ img{
     color: #ccc;
     animation:  animateText 2s ease-in;
 }
-
+.landing-home{
+    position: relative;
+}
+.landing-home::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 768px) {
+    .landing-img{
+      width: 100vw;
+      height: 98vh;
+    }
+}
 .about-heading, .skill {
     margin: 30px 10px 15px 0;
     font-size: 24px;
