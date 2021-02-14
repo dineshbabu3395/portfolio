@@ -9,7 +9,6 @@ import { StepperComponent } from './stepper/stepper.component';
 import { StepperEducationComponent } from './stepper-education/stepper-education.component';
 import { CardsComponent } from './cards/cards.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
