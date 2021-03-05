@@ -1,3 +1,5 @@
+
+
 .image-wrapper{
     position: relative;
 }
@@ -25,7 +27,7 @@
 @media (min-width: 768px) {
     .landing-img{
       width: 100vw;
-      height: 98vh;
+      height: 100vh;
     }
 }
 .about-heading, .skill {
@@ -116,10 +118,10 @@ ul {
     position: relative;
     top: 50%;  
     width: 16px;
-    margin: 15px;
+    margin: 15px 0px;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 50%;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
